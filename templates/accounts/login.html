@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="home_banner_area hero" id="about">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="banner_content d-flex flex-md-row flex-column">
+            <div class="banner-left text-md-right">
+              <h1 class="text-uppercase">Agents</h1>
+            </div>
+            <div class="banner-right position-relative">
+              <p>
+                You wish to be an agent? Here is all you have to do.
+              </p>
+              <span class="main_btn mt-4 mt-md-0">
+                <a href="#">Home</a>
+                <i class="fa fa-arrow-right mx-2"></i>
+                <a href="#">About</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% csrf_token %}
+<section id="works" class="how-it-works">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12 works-title">
+        <h3>How it works?</h3>
+        <p>You wish to be an agent with MyEstate?<br> Just complete a few steps and provide all the relevant information.<br>We’ll review and respond within the day.</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Step 1 -->
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="work-box animate">
+          <div class="work-box-number"><p>01</p></div>
+          <div class="work-box-title">
+            <p class="left">01</p>
+            <p class="left">Find Your Location</p>
+          </div>
+          <div class="work-box-text">
+            <p>Search for the location you want to list properties in and move to the next step.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="work-box animate">
+          <div class="work-box-number"><p>02</p></div>
+          <div class="work-box-title">
+            <p class="left">02</p>
+            <p class="left">Find Properties</p>
+          </div>
+          <div class="work-box-text">
+            <p>Now search for available properties in that location to add to your listings.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="work-box animate">
+          <div class="work-box-number"><p>03</p></div>
+          <div class="work-box-title">
+            <p class="left">03</p>
+            <p class="left">Make Contact</p>
+          </div>
+          <div class="work-box-text">
+            <p>Once you’ve completed the steps, contact us and we’ll confirm your agent status.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="row work-services">
+      <div class="col-12 work-services-title">
+        <h3>Services</h3>
+        <p>At MyEstate, we handle consulting, maintenance, and property management for rentals and sales.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <div class="work-service-image"></div>
+      </div>
+      <div class="col-12 col-md-5 work-service-info">
+        <h4>Renting</h4>
+        <p>We provide excellent real estate services with a strong property marketing system for ease of renting.</p>
+
+        <h4>Selling</h4>
+        <p>With our marketing strategy, we match sellers with buyers quickly and negotiate the best deals.</p>
+
+        <h4>Building</h4>
+        <p>We deliver projects on time and within budget, providing innovative and effective construction solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & What We Do -->
+<section class="add">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <div class="add-image add1">
+          <div class="add-image-info flex-center">
+            <img src="{% static 'images/pointer.svg' %}" class="left" alt="">
+            <p>Our Vision</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 flex-center">
+        <div class="add-info">
+          <h4>Our Vision</h4>
+          <p>To provide comfortable homes for everyone. We offer properties across budgets, locations, and preferences for renters, buyers, and investors.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 flex-center">
+        <div class="add-info">
+          <h4>What we do</h4>
+          <ul>
+            <li>1. Property Management/Administration.</li><br>
+            <li>2. Property Listing /Sales/Lease/Rental.</li><br>
+            <li>3. Land & Property Verification.</li><br>
+            <li>4. Property Development.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="add-image right add2">
+          <div class="add-image-info add-image-info2 flex-center">
+            <img src="{% static 'images/pointer.svg' %}" class="left" alt="">
+            <p>What we do</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div class="add-image add3"></div>
+      </div>
+      <div class="col-12 col-md-5 flex-center">
+        <div class="add-info add3-info">
+          <h4>MyEstate Properties</h4>
+          <p>MyEstate connects property owners, developers, and clients with eco-friendly, smart housing solutions. Established by Gaurav and Sagar in 2021, we believe everyone deserves a modern, affordable home.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Login Section -->
+<section id="login" class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h4><i class="fas fa-sign-in-alt"></i> Login</h4>
+          </div>
+          <div class="card-body">
+            {% include 'partials/_alerts.html' %}
+            <form action="{% url 'accounts:login_view' %}" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="password2">Password</label>
+                <input type="password" name="password" class="form-control" required>
+              </div>
+              <input type="submit" value="Login" class="btn btn-secondary btn-block">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
